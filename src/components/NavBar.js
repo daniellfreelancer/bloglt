@@ -41,7 +41,7 @@ async function isLogin(){
 
     isLogin()
 
-  }, [])
+  })
 
 
  function logout(){
