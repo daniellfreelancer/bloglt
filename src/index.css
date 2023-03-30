@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +9,67 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #222 !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+header a{
+  text-decoration: none !important;
+  color: inherit;
+}
+img {
+  max-width: 100% !important;
+}
+
+
+
+div.post{
+display: grid;
+grid-template-columns: 0.9fr 1.1fr;
+gap: 1rem;
+margin-bottom: 30px;
+}
+
+div.post div.text h2{
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+div.post p.info{
+  margin: 0;
+  color: #827a7a;
+  font-size: .7rem;
+  display: flex;
+  font-weight: bold;
+  gap: 1rem;
+}
+
+div.post p.info a.author{
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+}
+
+div.post p.summary{
+  margin: 10px 0;
+  text-align: justify;
+  line-height: 1.4rem;
+
+}
+
+div.post-page div.image-post{
+  max-height: 400px;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+div.post-page div.image-post img {
+  object-fit: cover;
+  object-position: center center;
 }

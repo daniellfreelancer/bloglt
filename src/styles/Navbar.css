@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo-img{
+    width: 22rem;
+}
+
+.nav-bg {
+    background-color: #033338 !important;
+}
+
+ul li {
+    color: aliceblue !important;
+}
+
+@media (max-width:465px) {
+    .logo-img{
+        width: 18rem;
+    }
+}
